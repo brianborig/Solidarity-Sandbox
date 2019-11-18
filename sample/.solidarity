@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json.schemastore.org/solidaritySchema",
+  "requirements": {
+    "Node": [
+      {
+        "rule": "cli",
+        "binary": "node",
+        "error": "You are using node@{{installedVersion}} please use node@{{wantedVersion}}",
+        "semver": "10.16.0"
+      }
+    ],
+    "Package JSON": [
+      {
+        "rule": "file",
+        "location": "./travolta/package.json"
+      }
+    ],
+    "Tests": [
+      {
+        "rule": "dir",
+        "location": "./bacon/__tests__"
+      }
+    ],
+    "NPM": [
+      {
+        "rule": "cli",
+        "binary": "npm",
+        "semver": "^6.0.3"
+      }
+    ],
+    "Yarn": [
+      {
+        "rule": "cli",
+        "binary": "yarn",
+        "semver": "1.17.3"
+      }
+    ],
+    "Xcode": [
+      {
+        "rule": "cli",
+        "binary": "xcodebuild",
+        "semver": "0.0",
+        "platform": "darwin"
+      },
+      {
+        "rule": "cli",
+        "binary": "xcrun",
+        "semver": "0",
+        "platform": "darwin"
+      }
+    ],
+    "git email": [
+      {
+        "rule": "shell",
+        "command": "git config user.email",
+        "match": ".+@.+"
+      }
+    ]
+  }
+}
