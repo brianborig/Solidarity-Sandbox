@@ -1,0 +1,12 @@
+{
+  "name": "Solidarity-Sandbox",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/brianborig/Solidarity-Sandbox.git",
+  "author": "bborig <bborig@extensis.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cypress": "^3.6.1",
+    "react-native-cli": "^2.0.1"
+  }
+}
